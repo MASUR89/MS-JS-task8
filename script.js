@@ -1,18 +1,18 @@
 let password = [];
-password.push("okfetj45", "33uij4", "jsjs2js3js");
+password.push("OkFetJ45", "33uIj4", "Jsjs2jS3js");
 console.log(password);
 
-password.forEach (pasw => {
-    console.log(pasw.toLocaleLowerCase());
-})
+for (let i = 0; i < password.length; i++) {
+    console.log(password[i].toLowerCase());
+}
 
-password.forEach(pasw => {
-    if (pasw.length >= 8 ) {
-        console.log(`${pasw} - Strong password`);
+for (let i = 0; i < password.length; i++) {
+    if (password[i].length >= 8 ) {
+        console.log(`${password[i]} - Strong password`);
     } else {
-        console.log(`${pasw} - Weak password`);
+        console.log(`${password[i]} - Weak password`);
     }
-})
+}
 
 for (let i = 0; i < password.length; i++) {
     let count = 0;
